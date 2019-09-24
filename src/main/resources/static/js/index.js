@@ -29,12 +29,13 @@ function listarEvento() {
 		axios({
 		  method: 'get',
 		  url: 'http://localhost:9090/eventos',
-//		  headers: {
-//	          'Authorization': 'Bearer 8977fcb6-da71-4089-8a61-3a563c418aae'
-//	      },
+		  headers: {
+	          'Authorization': 'Bearer 8977fcb6-da71-4089-8a61-3a563c418aae'
+	      },
 	      json: true
 		}).then(function (response) {
 			console.log(response.data);
+			
 //			$.each(response.data, function(key, value) {
 //				$("#eventos__conteudo").append(`
 //						<tr>
